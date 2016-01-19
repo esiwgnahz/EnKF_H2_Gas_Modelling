@@ -1,0 +1,31 @@
+#NUMERICS
+ $PCS_TYPE
+    MULTI_PHASE_FLOW
+ $LINEAR_SOLVER
+2     0     1e-15    10000    1    100   4
+ $ELE_UPWINDING
+  0 1.0
+ $ELE_MASS_LUMPING
+  1
+$ELE_GAUSS_POINTS
+  3 
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD   1.0e-5            1000             1   
+
+
+#NUMERICS
+ $PCS_TYPE
+  MASS_TRANSPORT
+ $ELE_MASS_LUMPING
+  1   
+ $LINEAR_SOLVER 
+; method error_tolerance max_iterations theta precond storage
+  3      0 1.e-012       2000           1   100       4
+ $NON_LINEAR_SOLVER 
+; method error_tolerance max_iterations relaxation
+  PICARD 1e-3            25             0.0  
+ $ELE_GAUSS_POINTS
+  2
+#STOP
+
