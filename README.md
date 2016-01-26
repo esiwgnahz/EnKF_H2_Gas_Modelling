@@ -7,4 +7,4 @@
       This version is unsatble and also i cannot get a convergence result eventually, and i just want to construct a framework for this 
       problem. In the near future, i will work hard to study OpenGeoSys and try to understand more and more source codes writing by C++.
       Further, this calculation codes writing by Python have a lot needing to be optimized, like the right use of classes enabling the  
-      realizations of OOP concept. Afterwords, i really walk slowly, but i never backwards.
+      realizations of OOP concept. 
